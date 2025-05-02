@@ -55,7 +55,7 @@ titleText: Research Philosophy
   <div style="
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 30px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -88,13 +88,13 @@ titleText: Research Philosophy
   ">
     <div style="
       position: absolute;
-      top: 120px;
+      top: 20px;
       width: 100%;
       text-align: center;
       font-weight: bold;
       color: black;
     ">
-      Multidimensional<br>Spectroscopy
+      <h2 style="font-size: 24px;">Multidimensional<br>Spectroscopy</h2>
     </div>
   </div>
 
@@ -102,7 +102,7 @@ titleText: Research Philosophy
   <div style="
     position: absolute;
     top: 150px;
-    left: 50px;
+    left: 30px;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -112,13 +112,12 @@ titleText: Research Philosophy
   ">
     <div style="
       position: absolute;
-      top: 120px;
+      top: 200px;
       width: 100%;
       text-align: center;
       font-weight: bold;
-      color: black;
     ">
-      Machine Learning
+      <h2 style="font-size: 24px;">Machine<br>Learning</h2>
     </div>
   </div>
 
@@ -136,13 +135,13 @@ titleText: Research Philosophy
   ">
     <div style="
       position: absolute;
-      top: 120px;
+      top: 200px;
       width: 100%;
       text-align: center;
       font-weight: bold;
       color: black;
     ">
-      Heterogeneous<br>Computing
+      <h2 style="font-size: 24px;">Heterogeneous<br>Computing</h2>
     </div>
   </div>
 
