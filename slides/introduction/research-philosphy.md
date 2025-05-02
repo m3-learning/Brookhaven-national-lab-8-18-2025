@@ -36,7 +36,7 @@ titleText: Research Philosophy
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: url('/path/to/spectroscopy.jpg') center/cover no-repeat;
+    background: url('/AFM.png') center/cover no-repeat;
     border: 2px solid black;
     opacity: 0.8;
   ">
