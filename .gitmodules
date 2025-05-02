@@ -1,0 +1,3 @@
+[submodule "slide-dev-template"]
+	path = slide-dev-template
+	url = https://github.com/jagar2/slide-dev-template.git
