@@ -2,9 +2,8 @@
 layout: main-custom-layout
 titleText: "Automated Labs"
 subtitleText: "Reproducibility at Scale: Can Robots Fix What Grad Students Can’t?"
-# mainHeight: 65
-# textboxHeight: 5
-reference: "hello"
+mainHeight: 65
+textboxHeight: 5
 ---
 
 <div class="relative w-full h-full">
