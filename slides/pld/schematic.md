@@ -4,9 +4,9 @@ titleText: "Ferroelectric Thin Films: Using Pulsed Laser Deposition"
 mainHeight: 70
 textboxHeight: 0
 images: [
-  {
-    src: "/pld-schematic/PLD.svg",
-  }
+    src: "/pld-schematic/PLD-Schematic-All-m2.svg",
+    src: "/pld-schematic/PLD-Schematic-All-m1.svg",
+    src: "/pld-schematic/PLD-Schematic-All.svg",
 ]
 ---
 
