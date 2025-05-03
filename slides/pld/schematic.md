@@ -1,18 +1,24 @@
 ---
 layout: main-custom-layout
 titleText: "Ferroelectric Thin Films: Using Pulsed Laser Deposition"
-mainHeight: 70
+subtitleText: ""
+mainHeight: 80
 textboxHeight: 0
-images: [
-  { src: "/pld-schematic/PLD-Schematic-All-m2.svg", click: true },
-  {
-    src: "/pld-schematic/PLD-Schematic-All-m1.svg",
-    click: true,
-  },
-  { src: "/pld-schematic/PLD-Schematic-All.svg", click: true }
-]
 ---
-::text::
-<p style="text-align: center;">
-  Automated labs are all the rage, but with rage comes pain points.
-</p>
+
+<div class="relative w-full h-full">
+  <v-click>
+    <img src="/pld-schematic/PLD-Schematic-All-m2.svg"
+         class="absolute inset-0 m-auto max-w-full max-h-full object-contain rounded-2xl transition-opacity duration-500"/>
+  </v-click>
+
+  <v-click>
+    <img src="/pld-schematic/PLD-Schematic-All-m1.svg"
+         class="absolute inset-0 m-auto max-w-full max-h-full object-contain rounded-2xl transition-opacity duration-500"/>
+  </v-click>
+
+  <v-click>
+    <img src="/pld-schematic/PLD-Schematic-All.svg"
+         class="absolute inset-0 m-auto max-w-full max-h-full object-contain rounded-2xl transition-opacity duration-500"/>
+  </v-click>
+</div>
