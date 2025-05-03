@@ -6,7 +6,7 @@ titleText: Research Philosophy
 <div style="position: relative; width: 600px; height: 600px; margin: auto;">
 
   <!-- Circle 1: Epitaxial Complex Oxide Synthesis -->
-  <div style="
+  <div v-click="1" style="
     position: absolute;
     top: 0;
     left: 30px;
@@ -39,7 +39,7 @@ titleText: Research Philosophy
   </div>
 
   <!-- Circle 2: Multidimensional Spectroscopy -->
-  <div style="
+  <div v-click="2" style="
     position: absolute;
     top: 0;
     left: 250px;
@@ -72,7 +72,7 @@ titleText: Research Philosophy
   </div>
 
   <!-- Circle 3: Machine Learning -->
-  <div style="
+  <div v-click="3" style="
     position: absolute;
     top: 150px;
     left: 30px;
@@ -105,7 +105,7 @@ titleText: Research Philosophy
   </div>
 
   <!-- Circle 4: Heterogeneous Computing -->
-  <div style="
+  <div v-click="4" style="
     position: absolute;
     top: 150px;
     left: 250px;
