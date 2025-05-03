@@ -56,4 +56,10 @@ src: ./slides/introduction/automated-lab-intro.md
 src: ./slides/pld/schematic.md
 ---
 
+---
+src: ./slides/pld-workflow/pld-workflow.md
+---
+
+---
+
 
