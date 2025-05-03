@@ -7,7 +7,6 @@ textboxHeight: 5
 images: [
   {
     src: "/automated-lab-introduction/automated-lab.png",
-    class: "text-center"
   }
 ]
 ---
