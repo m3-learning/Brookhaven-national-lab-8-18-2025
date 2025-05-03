@@ -48,3 +48,6 @@ mdc: true
 src: ./slides/introduction/research-philosphy.md
 ---
 
+---
+src: ./slides/introduction/automated-lab-intro.md
+---
