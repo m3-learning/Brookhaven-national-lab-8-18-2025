@@ -1,24 +1,43 @@
 ---
 layout: main-custom-layout
 titleText: "Ferroelectric Thin Films: Using Pulsed Laser Deposition"
-mainHeight: 80
+mainHeight: 70
 textboxHeight: 0
 ---
-
-```mermaid {theme: 'neutral', scale: 0.3}
+<div style="overflow-x: auto; white-space: nowrap;">
+```mermaid {theme: 'neutral', scale: .4}
+%%{init: {"theme": "neutral", "flowchart": {"nodeSpacing": 10, "rankSpacing": 10, "padding": 5, "useMaxWidth": false, "defaultRenderer": "elk"}}}%%
 graph LR
 systemparameters{System Parameters} --> SystemMetadata[System Metadata]
 systemparameters --> LaserPulse[Laser Pulse]
 systemparameters --> Environmental[Environmental Parameters]
 systemparameters --> Optics[Optics]
 
-LaserPulse --> RHEED[RHEED]
-LaserPulse --> PlumeDynamics[Plume Dynamics]
-Environmental --> PlumeDynamics[Plume Dynamics]
-Environmental --> RHEED[RHEED]
-EnvironmentalSensors[Environmental Sensors] --> SystemMetadata[System Metadata]
-Optics --> RHEED[RHEED]
-Optics --> PlumeDynamics[Plume Dynamics]
+Substrate --> Characterization[Characterization]
+
+subgraph PulsedLaserDeposition[Pulsed Laser Deposition]
+    LaserPulse --> RHEED[RHEED]
+    LaserPulse --> PlumeDynamics[Plume Dynamics]
+    Environmental --> PlumeDynamics[Plume Dynamics]
+    Environmental --> RHEED[RHEED]
+    EnvironmentalSensors[Environmental Sensors] --> SystemMetadata[System Metadata]
+    Optics --> RHEED[RHEED]
+    Optics --> PlumeDynamics[Plume Dynamics]
+    LaserPulse[Laser Pulse] --> Target[Target]
+    Target --> Substrate[Substrate]
+end
+
+subgraph Characterization[Characterization]
+    XRD[X-Ray Diffraction]
+    AFM[Atomic Force Microscopy]
+    Electrical[Electrical Characterization]
+    ElectronMicroscopy[Electron Microscopy]
+end
+
+XRD --> ScientificDataManagement[DataFed]
+AFM --> ScientificDataManagement[DataFed]
+Electrical --> ScientificDataManagement[DataFed]
+ElectronMicroscopy --> ScientificDataManagement[DataFed]
 
 Environmental --> SystemMetadata[System Metadata]
 
@@ -71,4 +90,4 @@ UpdateParameters --> systemparameters
 
 LogMetrics --> ScientificDataManagement[DataFed]
 ```
-
+</div>
