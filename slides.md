@@ -64,3 +64,8 @@ src: ./slides/pld-workflow/pld-workflow.md
 src: ./slides/pld-workflow/pld-workflow-datafed.md
 ---
 
+---
+src: ./slides/pld-workflow/mermaid-test.md
+---
+
+
