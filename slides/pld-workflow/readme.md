@@ -1,0 +1,1 @@
+docker run --rm -u `id -u`:`id -g` -v /home/jca92/SSMC-CI-Madison-5-20-2025/slides/pld-workflow:/data minlag/mermaid-cli -i pld-workflow.mmd -o pld-workflow.svg
