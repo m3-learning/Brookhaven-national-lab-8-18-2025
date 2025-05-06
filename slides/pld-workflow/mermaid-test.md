@@ -14,14 +14,14 @@ const diagrams = [
      C --> D[Final Step]`,
 
   `flowchart TD
-     A --> X
-     X --> Y
-     Y --> Z
-     Z --> End`,
+     A[First Box] --> X[Second Box]
+     X --> Y[Third Box]
+     Y --> Z[Fourth Box]
+     Z --> End[Final Box]`,
 
   `flowchart TD
-     X1[Init] --> X2[Process]
-     X2 --> X3[End]`
+     X1[Initial State] --> X2[Processing State]
+     X2 --> X3[Final State]`
 ]
 </script>
 
