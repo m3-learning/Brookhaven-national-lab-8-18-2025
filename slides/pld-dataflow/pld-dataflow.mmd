@@ -43,6 +43,22 @@ graph TD
   XRD --> Desktop2
   AtomicForceMicroscopy --> Desktop3
   ElectronMicroscopy --> Desktop4
-  
+
+  Desktop1 --> Desktop5
+  Desktop2 --> Desktop5
+  Desktop3 --> Desktop5
+  Desktop4 --> Desktop5
+
+  Desktop5 --> GoogleDrive
+  Desktop5 --> Box
+  Desktop5 --> Zenodo
+  Desktop5 --> Figshare
+  Desktop5 --> OneDrive
+
+  GoogleDrive@{ img: "https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/google-drive.png", h: 200, w: 200, pos: "b"}
+  Box@{ img: "https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/box.svg", h: 200, w: 200, pos: "b"}
+  Zenodo@{ img: "https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/zenodo.svg", h: 200, w: 200, pos: "b"}
+  Figshare@{ img: "https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/figshare.svg", h: 200, w: 200, pos: "b"}
+  OneDrive@{ img: "https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/onedrive.svg", h: 200, w: 200, pos: "b"}
 
   %% docker run --rm -u `id -u`:`id -g` -v /Users/joshuaagar/SSMC-CI-Madison-5-20-2025/slides/pld-dataflow:/data minlag/mermaid-cli -i pld-dataflow.mmd -o pld-dataflow.svg
