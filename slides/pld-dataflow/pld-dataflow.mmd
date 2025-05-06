@@ -27,6 +27,11 @@ graph TD
   XRD["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/XRD-icon.png' width='100'/><br/>X-Ray Diffraction</div>"]
   AtomicForceMicroscopy["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/Cypher-2.png?raw=true' width='100'/><br/>Atomic Force Microscopy</div>"]
   ElectronMicroscopy["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/Electron_microscope-01.png' width='100'/><br/>Electron Microscopy</div>"]
+  Desktop1["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop2["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop3["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop4["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop5["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
 
   PulsedLaserDeposition --> Notebook
   PulsedLaserDeposition --> RHEED
@@ -34,6 +39,10 @@ graph TD
   PulsedLaserDeposition --> AtomicForceMicroscopy
   PulsedLaserDeposition --> ElectronMicroscopy
 
+  RHEED --> Desktop1
+  XRD --> Desktop2
+  AtomicForceMicroscopy --> Desktop3
+  ElectronMicroscopy --> Desktop4
   
 
   %% docker run --rm -u `id -u`:`id -g` -v /Users/joshuaagar/SSMC-CI-Madison-5-20-2025/slides/pld-dataflow:/data minlag/mermaid-cli -i pld-dataflow.mmd -o pld-dataflow.svg
