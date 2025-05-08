@@ -1,6 +1,6 @@
 %%{init: {
   'theme': 'default',
-  'flowchart': { 'htmlLabels': true, 'useMaxWidth': false },
+  'flowchart': { 'htmlLabels': false, 'useMaxWidth': false },
   'scale': 2
 }}%%
 graph TD
@@ -38,15 +38,19 @@ graph TD
   Desktop3 --> Desktop5
   Desktop4 --> Desktop5
 
-  Desktop5 --> GoogleDrive
-  Desktop5 --> Box
-  Desktop5 --> Zenodo
-  Desktop5 --> Figshare
-  Desktop5 --> OneDrive
+  Desktop5 --- GoogleDrive:::invisible
+  Desktop5 --- Box:::invisible
+  Desktop5 --- Zenodo:::invisible
+  Desktop5 --- Figshare:::invisible
+  Desktop5 --- OneDrive:::invisible
+  linkStyle 13 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  %% linkStyle 11 stroke:none, fill:none, arrowhead:none
+  %% linkStyle 12 stroke:none, fill:none, arrowhead:none
+  %% linkStyle 14 stroke:none, fill:none, arrowhead:none
+  %% linkStyle 15 stroke:none, fill:none, arrowhead:none
 
-
-
-  classDef invisible fill-opacity:0, stroke-opacity:0, color:#0000, stroke:#0000, stroke-width:0;
+  classDef invisible fill-opacity:0, stroke-opacity:0, color:#ffffff, stroke:#ffffff, stroke-width:0;
 
 
   %% docker run --rm -u `id -u`:`id -g` -v /Users/joshuaagar/SSMC-CI-Madison-5-20-2025/slides/pld-dataflow:/data minlag/mermaid-cli -i pld-dataflow.mmd -o pld-dataflow.svg
