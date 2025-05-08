@@ -1,0 +1,49 @@
+%%{init: {
+  'theme': 'default',
+  'flowchart': { 'htmlLabels': false, 'useMaxWidth': false },
+  'scale': 2
+}}%%
+graph LR
+
+ElectronMicroscopy["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/Electron_microscope-01.png' width='100'/><br/>Electron Microscopy</div>"]
+ControlComputer["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Control Computer</div>"]
+WorkstationComputer["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Workstation Computer</div>"]
+
+ElectronMicroscopy --> ControlComputer
+ControlComputer --> |SMB Mount| DataFedClient
+subgraph DataFedClient["DataFed Client"]
+    DataFedContainer[DataFed Python Container]
+    MetadataExtractor[Metadata Extractor]
+    GlobusConnectPersonal[Globus Connect Personal]
+    DataFedContainer --> MetadataExtractor
+    DataFedContainer --> GlobusConnectPersonal
+end
+
+subgraph DataFedCoreService["DataFed Core Service"]
+    DataFedMetadataDatabase[DataFed Metadata Database]
+    DatafedWebUI[Datafed Web UI]
+    DataFedMetadataDatabase --> DatafedWebUI
+end
+
+MetadataExtractor --> DataFedMetadataDatabase
+
+GlobusConnectPersonal --> GlobusDataTransferNode
+
+subgraph DataFedRepository["DataFed Repository"]
+    GlobusDataTransferNode[Globus Data Transfer Node]
+    DataFedRepositoryContainer[DataFed Repository Container]
+    ParallelFileSystem[Parallel File System]
+    GlobusDataTransferNode <--> DataFedRepositoryContainer
+    DataFedRepositoryContainer <--> ParallelFileSystem
+end
+
+subgraph DataFedClient2["DataFed Client"]
+    DataFedContainer2[DataFed Python Container]
+    DataFedContainer2 --> DataFedMetadataDatabase
+    GlobusConnectPersonal2[Globus Connect Personal]
+    DataFedContainer2 --> GlobusConnectPersonal2
+    GlobusDataTransferNode --> GlobusConnectPersonal2
+    DatafedWebUI --> GlobusDataTransferNode
+end
+
+WorkstationComputer --> DataFedClient2
