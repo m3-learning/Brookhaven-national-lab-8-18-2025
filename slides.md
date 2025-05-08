@@ -71,3 +71,7 @@ src: ./slides/pld-dataflow/pld-dataflow.md
 ---
 src: ./slides/datafed/datafed.md
 ---
+
+---
+src: ./slides/datafed/datafed-workflow/datafed-workflow.md
+---
