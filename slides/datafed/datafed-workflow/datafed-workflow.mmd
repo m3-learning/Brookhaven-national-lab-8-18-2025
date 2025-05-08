@@ -15,14 +15,14 @@ ControlComputer --> |SMB Mount| DataFedClient
 subgraph DataFedClient["DataFed Client"]
     DataFedContainer["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/python.svg' width='100'/><br/>DataFed Python Container</div>"]
     MetadataExtractor[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/github.svg' width='100'/><br/>Metadata Extractor</div>]
-    GlobusConnectPersonal[Globus Connect Personal]
+    GlobusConnectPersonal[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/globus.png' width='100'/><br/>Globus Connect Personal</div>]
     DataFedContainer --> MetadataExtractor
     DataFedContainer --> GlobusConnectPersonal
 end
 
 subgraph DataFedCoreService["DataFed Core Service"]
-    DataFedMetadataDatabase[DataFed Metadata Database]
-    DatafedWebUI[Datafed Web UI]
+    DataFedMetadataDatabase[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/database.svg' width='100'/><br/>DataFed Metadata Database</div>]
+    DatafedWebUI[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/webpage.svg' width='100'/><br/>Datafed Web UI</div>]
     DataFedMetadataDatabase --> DatafedWebUI
 end
 
@@ -31,17 +31,17 @@ MetadataExtractor --> DataFedMetadataDatabase
 GlobusConnectPersonal --> GlobusDataTransferNode
 
 subgraph DataFedRepository["DataFed Repository"]
-    GlobusDataTransferNode[Globus Data Transfer Node]
-    DataFedRepositoryContainer[DataFed Repository Container]
-    ParallelFileSystem[Parallel File System]
+    GlobusDataTransferNode[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/globus.png' width='100'/><br/>Globus Data Transfer Node</div>]
+    DataFedRepositoryContainer[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/docker.svg' width='100'/><br/>DataFed Repository Container</div>]
+    ParallelFileSystem[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/pfs.svg' width='100'/><br/>Parallel File System</div>]
     GlobusDataTransferNode <--> DataFedRepositoryContainer
     DataFedRepositoryContainer <--> ParallelFileSystem
 end
 
 subgraph DataFedClient2["DataFed Client"]
-    DataFedContainer2[DataFed Python Container]
+    DataFedContainer2[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/docker.svg' width='100'/><br/>DataFed Python Container</div>]
     DataFedContainer2 --> DataFedMetadataDatabase
-    GlobusConnectPersonal2[Globus Connect Personal]
+    GlobusConnectPersonal2[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/globus.png' width='100'/><br/>Globus Connect Personal</div>]
     DataFedContainer2 --> GlobusConnectPersonal2
     GlobusDataTransferNode --> GlobusConnectPersonal2
     DatafedWebUI --> GlobusDataTransferNode
