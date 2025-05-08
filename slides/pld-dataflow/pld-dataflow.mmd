@@ -1,3 +1,5 @@
+---
+
 %%{init: {
   'theme': 'default',
   'flowchart': { 'htmlLabels': false, 'useMaxWidth': false },
@@ -38,17 +40,158 @@ graph TD
   Desktop3 --> Desktop5
   Desktop4 --> Desktop5
 
-  Desktop5 --- GoogleDrive:::invisible
-  Desktop5 --- Box:::invisible
-  Desktop5 --- Zenodo:::invisible
-  Desktop5 --- Figshare:::invisible
-  Desktop5 --- OneDrive:::invisible
+  Desktop5 --> GoogleDrive:::invisible
+  Desktop5 --> Box:::invisible
+  Desktop5 --> Zenodo:::invisible
+  Desktop5 --> Figshare:::invisible
+  Desktop5 --> OneDrive:::invisible
+
+  linkStyle 17 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 16 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
   linkStyle 13 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
   linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
-  %% linkStyle 11 stroke:none, fill:none, arrowhead:none
-  %% linkStyle 12 stroke:none, fill:none, arrowhead:none
-  %% linkStyle 14 stroke:none, fill:none, arrowhead:none
-  %% linkStyle 15 stroke:none, fill:none, arrowhead:none
+  %% linkStyle 11 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  %% linkStyle 12 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 15 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+
+  classDef invisible fill-opacity:0, stroke-opacity:0, color:#ffffff, stroke:#ffffff, stroke-width:0;
+
+
+  %% docker run --rm -u `id -u`:`id -g` -v /Users/joshuaagar/SSMC-CI-Madison-5-20-2025/slides/pld-dataflow:/data minlag/mermaid-cli -i pld-dataflow.mmd -o pld-dataflow.svg
+
+  ---
+
+
+%%{init: {
+  'theme': 'default',
+  'flowchart': { 'htmlLabels': false, 'useMaxWidth': false },
+  'scale': 2
+}}%%
+graph TD
+
+  PulsedLaserDeposition["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/PLD-Chamber.png?raw=true' width='100'/><br/>Pulsed Laser Deposition</div>"]
+  Notebook["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/notebook.png?raw=true' width='100'/><br/>Notebook</div>"]
+  RHEED["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/rheed.svg?raw=true' width='100'/><br/>Reflection High Energy Electron Diffraction</div>"]
+  XRD["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/XRD-icon.png' width='100'/><br/>X-Ray Diffraction</div>"]
+  AtomicForceMicroscopy["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/Cypher-2.png?raw=true' width='100'/><br/>Atomic Force Microscopy</div>"]
+  ElectronMicroscopy["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/Electron_microscope-01.png' width='100'/><br/>Electron Microscopy</div>"]
+  Desktop1["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop2["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop3["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop4["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop5["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  GoogleDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/google-drive.svg' width='100'/><br/>Google Drive</div>"]
+  Box["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/box.svg' width='100'/><br/>Box</div>"]
+  Zenodo["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/zenodo.svg' width='100'/><br/>Zenodo</div>"]
+  Figshare["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/figshare.svg' width='100'/><br/>Figshare</div>"]
+  OneDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/onedrive.svg' width='100'/><br/>OneDrive</div>"]
+
+  PulsedLaserDeposition --> Notebook
+  PulsedLaserDeposition --> RHEED
+  PulsedLaserDeposition --> XRD
+  PulsedLaserDeposition --> AtomicForceMicroscopy
+  PulsedLaserDeposition --> ElectronMicroscopy
+
+  RHEED --> Desktop1
+  XRD --> Desktop2
+  AtomicForceMicroscopy --> Desktop3
+  ElectronMicroscopy --> Desktop4
+
+  Desktop1 --> Desktop5:::invisible
+  Desktop2 --> Desktop5:::invisible
+  Desktop3 --> Desktop5:::invisible
+  Desktop4 --> Desktop5:::invisible
+
+  Desktop5 --> GoogleDrive:::invisible
+  Desktop5 --> Box:::invisible
+  Desktop5 --> Zenodo:::invisible
+  Desktop5 --> Figshare:::invisible
+  Desktop5 --> OneDrive:::invisible
+
+  linkStyle 9 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 10 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 11 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 12 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 15 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 17 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 16 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 13 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+
+
+  classDef invisible fill-opacity:0, stroke-opacity:0, color:#ffffff, stroke:#ffffff, stroke-width:0;
+
+
+  %% docker run --rm -u `id -u`:`id -g` -v /Users/joshuaagar/SSMC-CI-Madison-5-20-2025/slides/pld-dataflow:/data minlag/mermaid-cli -i pld-dataflow.mmd -o pld-dataflow.svg
+
+  ---
+
+
+%%{init: {
+  'theme': 'default',
+  'flowchart': { 'htmlLabels': false, 'useMaxWidth': false },
+  'scale': 2
+}}%%
+graph TD
+
+  PulsedLaserDeposition["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/PLD-Chamber.png?raw=true' width='100'/><br/>Pulsed Laser Deposition</div>"]
+  Notebook["<div style='opacity: 0; text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/notebook.png?raw=true' width='100'/><br/>Notebook</div>"]
+  RHEED["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/rheed.svg?raw=true' width='100'/><br/>Reflection High Energy Electron Diffraction</div>"]
+  XRD["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/XRD-icon.png' width='100'/><br/>X-Ray Diffraction</div>"]
+  AtomicForceMicroscopy["<div style='text-align:center'><img src='https://github.com/jagar2/SSMC-CI-Madison-5-20-2025/blob/main/public/icon/Cypher-2.png?raw=true' width='100'/><br/>Atomic Force Microscopy</div>"]
+  ElectronMicroscopy["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/Electron_microscope-01.png' width='100'/><br/>Electron Microscopy</div>"]
+  Desktop1["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop2["<div style='opacity: 0;text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop3["<div style='opacity: 0;text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop4["<div style='opacity: 0;text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  Desktop5["<div style='opacity: 0;text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  GoogleDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/google-drive.svg' width='100'/><br/>Google Drive</div>"]
+  Box["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/box.svg' width='100'/><br/>Box</div>"]
+  Zenodo["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/zenodo.svg' width='100'/><br/>Zenodo</div>"]
+  Figshare["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/figshare.svg' width='100'/><br/>Figshare</div>"]
+  OneDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/onedrive.svg' width='100'/><br/>OneDrive</div>"]
+
+  PulsedLaserDeposition --> Notebook:::invisible
+  PulsedLaserDeposition --> RHEED
+  PulsedLaserDeposition --> XRD
+  PulsedLaserDeposition --> AtomicForceMicroscopy
+  PulsedLaserDeposition --> ElectronMicroscopy
+
+  RHEED --> Desktop1:::invisible
+  XRD --> Desktop2:::invisible
+  AtomicForceMicroscopy --> Desktop3:::invisible
+  ElectronMicroscopy --> Desktop4:::invisible
+
+  Desktop1 --> Desktop5:::invisible
+  Desktop2 --> Desktop5:::invisible
+  Desktop3 --> Desktop5:::invisible
+  Desktop4 --> Desktop5:::invisible
+
+  Desktop5 --> GoogleDrive:::invisible
+  Desktop5 --> Box:::invisible
+  Desktop5 --> Zenodo:::invisible
+  Desktop5 --> Figshare:::invisible
+  Desktop5 --> OneDrive:::invisible
+
+  linkStyle 0 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 8 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 7 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 6 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 5 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+
+  linkStyle 9 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 10 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 11 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 12 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 15 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 17 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 16 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 13 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+  linkStyle 14 stroke:#ffffff, fill:#ffffff, stroke-opacity:0
+
 
   classDef invisible fill-opacity:0, stroke-opacity:0, color:#ffffff, stroke:#ffffff, stroke-width:0;
 

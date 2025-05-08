@@ -67,3 +67,7 @@ src: ./slides/filesystem/filesystem.md
 ---
 src: ./slides/pld-dataflow/pld-dataflow.md
 ---
+
+---
+src: ./slides/datafed/datafed.md
+---

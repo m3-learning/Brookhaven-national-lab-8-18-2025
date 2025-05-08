@@ -1,11 +1,13 @@
 ---
 layout: main-custom-layout
-titleText: "Ferroelectric Thin Films: Using Pulsed Laser Deposition"
+titleText: "Pulsed Laser Deposition Workflow"
 mainHeight: 80
 textboxHeight: 0
 ---
 
 <CrossfadeImages :images="[
-  '/pld-dataflow/pld-dataflow-m1.png',
-  '/pld-dataflow/pld-dataflow.png',
+  '/pld-dataflow/1.png',
+  '/pld-dataflow/2.png',
+  '/pld-dataflow/3.png',
+  '/pld-dataflow/4.png',
 ]" />
