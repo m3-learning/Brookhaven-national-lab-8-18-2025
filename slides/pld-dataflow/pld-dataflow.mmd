@@ -16,6 +16,11 @@ graph TD
   Desktop3["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
   Desktop4["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
   Desktop5["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/desktop.png' width='100'/><br/>Desktop</div>"]
+  GoogleDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/google-drive.svg' width='100'/><br/>Google Drive</div>"]
+  Box["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/box.svg' width='100'/><br/>Box</div>"]
+  Zenodo["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/zenodo.svg' width='100'/><br/>Zenodo</div>"]
+  Figshare["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/figshare.svg' width='100'/><br/>Figshare</div>"]
+  OneDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/onedrive.svg' width='100'/><br/>OneDrive</div>"]
 
   PulsedLaserDeposition --> Notebook
   PulsedLaserDeposition --> RHEED
@@ -33,17 +38,13 @@ graph TD
   Desktop3 --> Desktop5
   Desktop4 --> Desktop5
 
-  Desktop5 --> GoogleDrive:::invisibleEdge
-  Desktop5 --> Box:::invisibleEdge
-  Desktop5 --> Zenodo:::invisibleEdge
-  Desktop5 --> Figshare:::invisibleEdge
-  Desktop5 --> OneDrive:::invisibleEdge
+  Desktop5 --> GoogleDrive
+  Desktop5 --> Box
+  Desktop5 --> Zenodo
+  Desktop5 --> Figshare
+  Desktop5 --> OneDrive
 
-  GoogleDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/google-drive.svg' width='100'/><br/>Google Drive</div>"]:::invisible
-  Box["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/box.svg' width='100'/><br/>Box</div>"]:::invisible
-  Zenodo["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/zenodo.svg' width='100'/><br/>Zenodo</div>"]:::invisible
-  Figshare["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/figshare.svg' width='100'/><br/>Figshare</div>"]:::invisible
-  OneDrive["<div style='opacity: 0; text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/onedrive.svg' width='100'/><br/>OneDrive</div>"]:::invisible
+
 
   classDef invisible fill-opacity:0, stroke-opacity:0, color:#0000, stroke:#0000, stroke-width:0;
 
