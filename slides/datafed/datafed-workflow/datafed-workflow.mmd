@@ -13,8 +13,8 @@ WorkstationComputer["<div style='text-align:center'><img src='https://raw.github
 ElectronMicroscopy --> ControlComputer
 ControlComputer --> |SMB Mount| DataFedClient
 subgraph DataFedClient["DataFed Client"]
-    DataFedContainer[DataFed Python Container]
-    MetadataExtractor[Metadata Extractor]
+    DataFedContainer["<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/python.svg' width='100'/><br/>DataFed Python Container</div>"]
+    MetadataExtractor[<div style='text-align:center'><img src='https://raw.githubusercontent.com/jagar2/SSMC-CI-Madison-5-20-2025/refs/heads/main/public/icon/github.svg' width='100'/><br/>Metadata Extractor</div>]
     GlobusConnectPersonal[Globus Connect Personal]
     DataFedContainer --> MetadataExtractor
     DataFedContainer --> GlobusConnectPersonal
