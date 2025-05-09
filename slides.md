@@ -83,3 +83,11 @@ src: ./slides/datafed/datafed-infrastructure.md
 ---
 src: ./slides/people/elephant.md
 ---
+
+---
+src: ./slides/pld-diagram2/pld-diagram2.md
+---
+
+---
+src: ./slides/pld-ui.md
+---
