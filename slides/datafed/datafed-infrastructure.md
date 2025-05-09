@@ -31,7 +31,7 @@ mainHeight: 75
   <div v-click="2" class="flex-1 flex justify-center items-center">
     <div class="flex flex-col items-center">
       <img src="/public/icon/storj.svg" class="h-[100px] object-contain" alt="Lehigh Cluster" />
-      <h2>StorJ</h2>
+      <h3>StorJ</h3>
     </div>
   </div>
 </div>
