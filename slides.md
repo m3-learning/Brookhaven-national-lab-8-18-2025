@@ -75,3 +75,7 @@ src: ./slides/datafed/datafed.md
 ---
 src: ./slides/datafed/datafed-workflow/datafed-workflow.md
 ---
+
+---
+src: ./slides/datafed/datafed-infrastructure.md
+---
