@@ -91,3 +91,12 @@ src: ./slides/pld-diagram2/pld-diagram2.md
 ---
 src: ./slides/pld-ui.md
 ---
+
+---
+src: ./slides/microscopy-highlight/microscopy-highlight.md
+---
+
+---
+src: ./slides/order-periodicity-symmetry.md
+---
+
