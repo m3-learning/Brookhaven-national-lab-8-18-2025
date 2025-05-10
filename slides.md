@@ -100,3 +100,6 @@ src: ./slides/microscopy-highlight/microscopy-highlight.md
 src: ./slides/order-periodicity-symmetry.md
 ---
 
+---
+src: ./slides/wallpaper-symmetry/wallpapergroups.md
+---
