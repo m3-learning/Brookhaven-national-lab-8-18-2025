@@ -1,5 +1,6 @@
 # SSMC-CI-Madison-5-20-2025
 
+git submodule update --init --recursive
 
 docker build -t slidev-with-plotly .
 
