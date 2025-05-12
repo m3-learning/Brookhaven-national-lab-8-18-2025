@@ -115,6 +115,27 @@ src: ./slides/wallpaper-symmetry/cross-validation-100k.md
 ---
 src: ./slides/wallpaper-symmetry/cross-validation-10m.md
 ---
+---
+layout: main-custom-layout
+titleText: "Pulsed Laser Deposition GUI"
+mainHeight: 70
+textboxHeight: 0
+---
+# 2-D Plotly Examples
 
+Two 2D plots for display
 
+Try to interact with the graphs 🥰
+
+<div grid="~ cols-2 gap-20">
+
+<Transform :scale="0.75">
+<PlotlyGraph filePath="graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
+</Transform>
+
+<Transform :scale="0.75">
+<PlotlyGraph filePath="graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
+</Transform>
+
+</div>
 
