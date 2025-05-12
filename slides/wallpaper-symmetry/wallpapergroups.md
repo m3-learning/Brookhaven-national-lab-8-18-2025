@@ -1,8 +1,8 @@
 ---
 layout: main-custom-layout
 titleText: "Wallpaper Group Symmetries"
-mainHeight: 60
-textboxHeight: 10
+mainHeight: 55
+textboxHeight: 15
 ---
 
 <CrossfadeImages :images="[
@@ -13,6 +13,7 @@ textboxHeight: 10
 <div class="text-left">
   <ul class="list-disc pl-4">
     <li>In 2D, symmetries are defined by the 17 wallpaper groups -> It is important to ask how effective are neural networks at learning symmetries from images?</li>
+    <li> Generate a dataset with 10k total images. </li>
   </ul>
 </div>
 </template>

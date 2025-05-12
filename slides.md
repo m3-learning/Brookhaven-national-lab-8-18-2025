@@ -97,7 +97,7 @@ src: ./slides/microscopy-highlight/microscopy-highlight.md
 ---
 
 ---
-src: ./slides/order-periodicity-symmetry.md
+src: ./slides/wallpaper-symmetry/order-periodicity-symmetry.md
 ---
 
 ---
