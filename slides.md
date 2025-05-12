@@ -105,5 +105,16 @@ src: ./slides/wallpaper-symmetry/wallpapergroups.md
 ---
 
 ---
-src: ./slides/wallpaper-symmetry/cross-validation.md
+src: ./slides/wallpaper-symmetry/cross-validation-10k.md
 ---
+
+---
+src: ./slides/wallpaper-symmetry/cross-validation-100k.md
+---
+
+---
+src: ./slides/wallpaper-symmetry/cross-validation-10m.md
+---
+
+
+
