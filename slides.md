@@ -121,21 +121,5 @@ titleText: "Pulsed Laser Deposition GUI"
 mainHeight: 70
 textboxHeight: 0
 ---
-# 2-D Plotly Examples
 
-Two 2D plots for display
-
-Try to interact with the graphs 🥰
-
-<div grid="~ cols-2 gap-20">
-
-<Transform :scale="0.75">
-<PlotlyGraph filePath="graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
-</Transform>
-
-<Transform :scale="0.75">
-<PlotlyGraph filePath="graph/plotly1.json" tickFontSize="18" graphWidth="800"/>
-</Transform>
-
-</div>
-
+<iframe src="/file.html" height="100%" style="aspect-ratio: 1/1;"></iframe>
