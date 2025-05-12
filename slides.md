@@ -103,3 +103,7 @@ src: ./slides/wallpaper-symmetry/order-periodicity-symmetry.md
 ---
 src: ./slides/wallpaper-symmetry/wallpapergroups.md
 ---
+
+---
+src: ./slides/wallpaper-symmetry/cross-validation.md
+---

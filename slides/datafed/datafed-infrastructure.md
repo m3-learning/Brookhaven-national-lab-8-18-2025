@@ -15,7 +15,7 @@ mainHeight: 75
 ---
 
 <template #col0>
-**DataFed** is a federated research data management platform. This column shows a text-only explanation.
+**DataFed** is a federated research data management platform.
 </template>
 
 <template #col1>
