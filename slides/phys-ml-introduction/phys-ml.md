@@ -8,6 +8,8 @@ reference: "https://medium.com/geekculture/how-jpeg-compression-works-a751cd877c
 
 <CrossfadeImages :images="[
   'jpeg-compression.gif',
+  'compressed-pld.jpg',
+  'DCT-art.jpg'
 ]" />
 
 <template #text>
