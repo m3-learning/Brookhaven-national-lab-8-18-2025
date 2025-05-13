@@ -123,3 +123,7 @@ textboxHeight: 0
 ---
 
 <iframe src="/file.html" height="100%" style="aspect-ratio: 1/1;"></iframe>
+
+---
+src: ./slides/phys-ml-introduction/phys-ml.md
+---
