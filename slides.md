@@ -127,3 +127,7 @@ textboxHeight: 0
 ---
 src: ./slides/phys-ml-introduction/phys-ml.md
 ---
+
+---
+src: ./slides/4dstem/4dstem.md
+---

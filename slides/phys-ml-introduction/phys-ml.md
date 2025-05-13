@@ -20,3 +20,22 @@ reference: "https://medium.com/geekculture/how-jpeg-compression-works-a751cd877c
   </ul>
 </div>
 </template>
+
+---
+layout: main-custom-layout
+titleText: "Physics-Informed Machine Learning"
+mainHeight: 50
+textboxHeight: 15
+---
+
+<CrossfadeImages :images="[
+  'physics-informed-neural-network.png'
+]" />
+
+<template #text>
+<div class="text-left">
+  <ul class="list-disc pl-4">
+    <li>We want to ensure parsimony of the learned representation --> Therefore we need to include physics in the learning process</li>
+  </ul>
+</div>
+</template>
