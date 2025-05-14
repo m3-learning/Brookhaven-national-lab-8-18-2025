@@ -144,3 +144,6 @@ src: ./slides/4dstem/noisy-results.md
 src: ./slides/4dstem/mae.md
 ---
 
+---
+src: ./slides/4dstem/experiment.md
+---
