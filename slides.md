@@ -117,6 +117,10 @@ src: ./slides/wallpaper-symmetry/cross-validation-10m.md
 ---
 
 ---
+src: ./slides/wallpaper-symmetry/attention_map.md
+---
+
+---
 src: ./slides/phys-ml-introduction/phys-ml.md
 ---
 
@@ -140,4 +144,3 @@ src: ./slides/4dstem/noisy-results.md
 src: ./slides/4dstem/mae.md
 ---
 
----

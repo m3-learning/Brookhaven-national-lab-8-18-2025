@@ -6,7 +6,7 @@ textboxHeight: 15
 ---
 
 <CrossfadeImages :images="[
-  'Wallpaper-group-symmetry.svg',
+  'sym/Wallpaper-group-symmetry.svg',
 ]" />
 
 <template #text>
