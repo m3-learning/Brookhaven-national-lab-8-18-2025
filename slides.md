@@ -115,14 +115,6 @@ src: ./slides/wallpaper-symmetry/cross-validation-100k.md
 ---
 src: ./slides/wallpaper-symmetry/cross-validation-10m.md
 ---
----
-layout: main-custom-layout
-titleText: "Pulsed Laser Deposition GUI"
-mainHeight: 70
-textboxHeight: 0
----
-
-<iframe src="/file.html" height="100%" style="aspect-ratio: 1/1;"></iframe>
 
 ---
 src: ./slides/phys-ml-introduction/phys-ml.md
@@ -136,3 +128,16 @@ src: ./slides/4dstem/4dstem.md
 src: ./slides/4dstem/cc-st-ae.md
 ---
 
+---
+src: ./slides/4dstem/simulated-data.md
+---
+
+---
+src: ./slides/4dstem/noisy-results.md
+---
+
+---
+src: ./slides/4dstem/mae.md
+---
+
+---
