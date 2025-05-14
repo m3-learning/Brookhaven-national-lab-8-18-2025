@@ -12,7 +12,6 @@ titleClicks: [0, 1]
 columnWidths: [1.5, 2]
 textboxHeight: 0
 mainHeight: 60
-reference: "Colab:" 
+reference: "Colab: David Muller, Colin Ophus, Yimo Han, and others" 
 roundedEdges: false
 ---
-

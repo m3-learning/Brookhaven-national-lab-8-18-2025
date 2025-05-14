@@ -131,3 +131,8 @@ src: ./slides/phys-ml-introduction/phys-ml.md
 ---
 src: ./slides/4dstem/4dstem.md
 ---
+
+---
+src: ./slides/4dstem/cc-st-ae.md
+---
+
