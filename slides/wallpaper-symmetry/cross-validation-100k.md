@@ -1,11 +1,11 @@
 ---
 layout: ncolumns
-titleText: "Cross Validation: 10M Training Images"
+titleText: "Cross Validation: 100K Training Images"
 columns: 3
 images:
-  - sym/10m/10m-training-01.svg
-  - sym/10m/10m-validation-01.svg
-  - sym/10m/10m-atom-01.svg
+  - sym/confusion_matrix/100k train.svg
+  - sym/confusion_matrix/100k valid.svg
+  - sym/confusion_matrix/100k atoms.svg
 titles:
   - "Training"
   - "Validation"

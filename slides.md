@@ -115,6 +115,11 @@ src: ./slides/wallpaper-symmetry/cross-validation-100k.md
 ---
 src: ./slides/wallpaper-symmetry/cross-validation-10m.md
 ---
+
+---
+src: ./slides/wallpaper-symmetry/attention_map.md
+---
+
 ---
 layout: main-custom-layout
 titleText: "Pulsed Laser Deposition GUI"
@@ -122,4 +127,7 @@ mainHeight: 70
 textboxHeight: 0
 ---
 
-<iframe src="/file.html" height="100%" style="aspect-ratio: 1/1;"></iframe>
+<div style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding-top: 180px; position: relative; left: -20px;">
+    <iframe src="sym/training_statistics_interactive.html"
+            style="transform: scale(0.84); transform-origin: center; border: none; width: 1000px; height: 1000px;"></iframe>
+</div>
