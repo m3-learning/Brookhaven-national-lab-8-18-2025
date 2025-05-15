@@ -147,3 +147,11 @@ src: ./slides/4dstem/mae.md
 ---
 src: ./slides/4dstem/experiment.md
 ---
+
+---
+src: ./slides/pld-workflow/pld-workflow-rheed.md
+---
+
+---
+src: ./slides/fastml-rheed/rheed-fastml.md
+---

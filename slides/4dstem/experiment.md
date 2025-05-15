@@ -4,7 +4,7 @@ titleText: "4D-STEM: Strain Mapping Experimental Results"
 columns: 2
 images:
   - stem4d/experiment/figure-4-1.svg
-  - - stem4d/experiment/figure-4-2.svg
+  - stem4d/experiment/figure-4-2.svg
 titleClicks: [0, 1]
 columnWidths: [1.5, 2]
 textboxHeight: 10

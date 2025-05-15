@@ -1,6 +1,5 @@
-
-
-%%{init: {"theme": "neutral", "flowchart": {"nodeSpacing": 10, "rankSpacing": 10, "padding": 5, "useMaxWidth": false, "defaultRenderer": "elk"}}}%%graph LR
+%%{init: {"theme": "neutral", "flowchart": {"nodeSpacing": 10, "rankSpacing": 10, "padding": 5, "useMaxWidth": false, "defaultRenderer": "elk"}}}%%
+graph LR
 systemparameters{System Parameters} --> SystemMetadata[System Metadata]
 systemparameters --> LaserPulse[Laser Pulse]
 systemparameters --> Environmental[Environmental Parameters]
@@ -82,7 +81,6 @@ ControlLogic --> UpdateParameters[[Update Parameters]]
 UpdateParameters --> systemparameters
 
 LogMetrics --> ScientificDataManagement[DataFed]
-%% style ScientificDataManagement fill:#07294D,stroke:#1E40AF,color:#ffffff,stroke-width:2px
 style RHEED fill:#07294D,stroke:#1E40AF,color:#ffffff,stroke-width:2px
 style PlumeDynamics fill:#07294D,stroke:#1E40AF,color:#ffffff,stroke-width:2px
 classDef invisible fill-opacity:0, stroke-opacity:0, color:#0000;
