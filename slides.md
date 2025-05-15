@@ -155,3 +155,8 @@ src: ./slides/pld-workflow/pld-workflow-rheed.md
 ---
 src: ./slides/fastml-rheed/rheed-fastml.md
 ---
+
+---
+src: ./slides/fastml-rheed/high-speed-rheed.md
+---
+
