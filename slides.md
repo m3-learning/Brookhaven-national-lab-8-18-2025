@@ -160,3 +160,6 @@ src: ./slides/fastml-rheed/rheed-fastml.md
 src: ./slides/fastml-rheed/high-speed-rheed.md
 ---
 
+---
+src: ./slides/plume-dynamics/plume-dynamics.md
+---
