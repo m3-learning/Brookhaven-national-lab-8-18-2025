@@ -3,7 +3,7 @@
 theme: ./slide-dev-template/slidev/theme
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-title: Add Title Here
+title: "🧠🔩 Chem-AIstry in Motion: Fast Science, Faster Learning – Beyond Equilibrium Synthesis, Powered by ML, FPGAs, and Kubernetes"
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
