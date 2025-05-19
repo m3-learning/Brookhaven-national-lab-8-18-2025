@@ -13,7 +13,7 @@ titles:
 titleClicks: [0, 1, 2]
 columnWidths: [1,1,1]
 textboxHeight: 15
-mainHeight: 60
+mainHeight: 50
 ---
 
 <template #col0-text>
@@ -37,7 +37,8 @@ mainHeight: 60
 <template #text>
 <div class="text-left">
   <ul class="list-disc pl-4">
-    <li>Cross Validation</li>
+    <li>10M vision transformers start to learn robust understanding of symmetry within statistical bounds of the training dataset</li>
+    <li>Massive scale data not typical in materials science or chemistry is required</li>
   </ul>
 </div>
 </template>
