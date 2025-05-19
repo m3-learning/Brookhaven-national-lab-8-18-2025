@@ -163,3 +163,7 @@ src: ./slides/fastml-rheed/high-speed-rheed.md
 ---
 src: ./slides/plume-dynamics/plume-dynamics.md
 ---
+
+---
+src: ./slides/kubernettes/kubernettes.md
+---
