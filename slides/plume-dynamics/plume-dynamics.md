@@ -34,6 +34,19 @@ mainHeight: 75
 textboxHeight: 0
 ---
 
+<div class="h-full w-full flex items-center justify-center">
+  <video controls class="max-w-full max-h-full">
+    <source src="/plume-dynamics/t5_plume_video.mp4" type="video/mp4">
+  </video>
+</div>
+
+---
+layout: main-custom-layout
+titleText: "Full-Frame Plume Dynamics Imaging"
+mainHeight: 75
+textboxHeight: 0
+---
+
 <div class="h-[80vh] overflow-y-auto overflow-x-hidden p-4">
   <div class="flex flex-col items-center justify-center gap-4">
     <img
@@ -63,3 +76,11 @@ reference: "Colab: R. Ramesh, Lane Martin (Rice), John Heron (Michigan)"
 roundedEdges: false
 ---
 
+<template #col1>
+<div v-click="1" class="text-left gap-4 flex-1">
+    <ul class="list-disc pl-4">
+      <li>Computer Vision can be used to characterize the quantify the plume dynamics</li> 
+      <li>There are no clear statistically significant trends in the average plume dynamics metrics</li>
+    </ul>
+  </div>
+</template>
