@@ -46,3 +46,16 @@ reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intens
   </a>
 </div>
 
+
+---
+layout: main-custom-layout
+titleText: "Kubernettes (K8s): Not a Scheduler, an Orchestrator"
+mainHeight: 75
+textboxHeight: 0
+reference: "Award: NSF 2320600: MRI: Track 2 Platform for Accessible Data-Intensive Science and Engineering" 
+---
+
+<CrossfadeImages :images="[
+  'kubernettes/k8-explaination.png',
+]" />
+

@@ -167,3 +167,8 @@ src: ./slides/plume-dynamics/plume-dynamics.md
 ---
 src: ./slides/kubernettes/kubernettes.md
 ---
+
+---
+src: ./slides/fastml/introduction.md
+---
+
