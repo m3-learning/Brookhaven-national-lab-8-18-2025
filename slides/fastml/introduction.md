@@ -45,22 +45,3 @@ reference: "Fast Machine Learning Lab - https://fastmachinelearning.org/"
   </div>
 </template>
 
----
-layout: main-custom-layout
-titleText: "From Static to Dynamic Control"
-mainHeight: 55
-textboxHeight: 0
-reference: "Google Deep Mind: Degrave, J., Felici, F., Buchli, J. et al. Magnetic control of tokamak plasmas through deep reinforcement learning. Nature 602, 414–419 (2022). https://doi.org/10.1038/s41586-021-04301-9"
----
-
-<CrossfadeImages :images="[
-    'fastml/plasma-control.gif',
-    ]"/>
-
-<template #text>
-  <div class="text-left">
-    <ul class="list-disc pl-4">
-      <li> We need ML control systems to control dynamic non-equilibrium processes in materials manufacturing</li>
-    </ul>
-  </div>
-</template>

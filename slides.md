@@ -172,3 +172,6 @@ src: ./slides/kubernettes/kubernettes.md
 src: ./slides/fastml/introduction.md
 ---
 
+---
+src: ./slides/fastml/plasma.md
+---
