@@ -28,6 +28,7 @@ layout: main-custom-layout
 titleText: "HLS4ML : Real-Time ML on FPGAs"
 mainHeight: 55
 textboxHeight: 0
+reference: "Fast Machine Learning Lab - https://fastmachinelearning.org/"
 ---
 
 <CrossfadeImages :images="[
@@ -49,9 +50,8 @@ layout: main-custom-layout
 titleText: "From Static to Dynamic Control"
 mainHeight: 55
 textboxHeight: 0
-reference: Slide Courtesy Nhan Tran FermiLab
+reference: "Google Deep Mind: Degrave, J., Felici, F., Buchli, J. et al. Magnetic control of tokamak plasmas through deep reinforcement learning. Nature 602, 414–419 (2022). https://doi.org/10.1038/s41586-021-04301-9"
 ---
-<!-- references: "Google Deep Mind: Degrave, J., Felici, F., Buchli, J. et al. Magnetic control of tokamak plasmas through deep reinforcement learning. Nature 602, 414–419 (2022). https://doi.org/10.1038/s41586-021-04301-9" -->
 
 <CrossfadeImages :images="[
     'fastml/plasma-control.gif',
