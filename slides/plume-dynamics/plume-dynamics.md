@@ -1,6 +1,6 @@
 ---
 layout: main-custom-layout
-titleText: "Pulsed Laser Deposition Reproducibility"
+titleText: "To Sand or Not to Sand, That is the Question"
 mainHeight: 75
 textboxHeight: 0
 ---
@@ -47,16 +47,21 @@ mainHeight: 75
 textboxHeight: 0
 ---
 
-<div class="h-[80vh] overflow-y-auto overflow-x-hidden p-4">
+<CrossfadeImages :images="[
+  'plume-dynamics/example-images.png',
+]" />
+
+<!-- <div class="h-[80vh] overflow-y-auto overflow-x-hidden p-4">
   <div class="flex flex-col items-center justify-center gap-4">
     <img
-      src="/plume-dynamics/example-images.svg"
+      src="/plume-dynamics/2_RSM_Analysis.png"
       class="max-w-full"
       id="zoomable-image"
       style="transform-origin: top center; transition: transform 0.2s;"
+      alt="Example of Plume Dynamics"
     />
   </div>
-</div>
+</div> -->
 
 ---
 layout: ncolumns
@@ -84,3 +89,31 @@ roundedEdges: false
     </ul>
   </div>
 </template>
+
+---
+layout: main-custom-layout
+titleText: "Statistical Analysis of Plume Dynamics"
+mainHeight: 55
+textboxHeight: 10
+---
+
+<CrossfadeImages :images="[
+  'plume-dynamics/5-Plume_metrics_violinplot.svg',
+]" />
+
+::text::
+- Statistical distribution of the plume dynamics are bimodal, and heavy tailed for first growths
+
+---
+layout: main-custom-layout
+titleText: "Heatmap of Plume Area"
+mainHeight: 55
+textboxHeight: 10
+---
+
+<CrossfadeImages :images="[
+  'plume-dynamics/5_Plume_Area_Heatmap.png',
+]" />
+
+::text::
+- Heatmaps of plume area show anomalous behavior close to edge of the target
