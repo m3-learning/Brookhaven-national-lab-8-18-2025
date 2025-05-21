@@ -110,7 +110,7 @@ roundedEdges: false
 ---
 layout: main-custom-layout
 titleText: "FPGA Block Diagram"
-mainHeight: 70
+mainHeight: 60
 textboxHeight: 0
 ---
 
@@ -120,4 +120,5 @@ textboxHeight: 0
 
 ::text::
 - How do you efficiently achieve a good tradeoff between latency (power), and accuracy?
+
 

@@ -175,3 +175,7 @@ src: ./slides/fastml/introduction.md
 ---
 src: ./slides/fastml/plasma.md
 ---
+
+---
+src: ./slides/fastml/modelcompression.md
+---
