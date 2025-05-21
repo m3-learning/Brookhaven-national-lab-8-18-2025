@@ -35,7 +35,18 @@ flowchart LR
             end
         end
 
+        subgraph VivadoDataFed[Vivado DataFed]
+            subgraph File4[File]
+                VivadoOutputFiles[Vivado Output Files]
+            end
+            subgraph Metadata4[Metadata]
+                ResourceReportData[Resource Report]
+            end
+        end
     end
+
+    ResourceReport --> ResourceReportData
+    CompiledIPBlock --> VivadoOutputFiles
 
     ModelTraining --> ModelWeights
     ModelEvaluation --> ModelMetrics
@@ -96,6 +107,7 @@ flowchart LR
         LayerPrecisionRange[Layer Precision Range]
 
         subgraph Optimization[Optimization]
+        class Optimization fill:#f0e68c,stroke:#f0e68c,stroke-width:2;
             LearningRate[Learning Rate]
             OptimizerOrder[Optimizer Order]
             LearningRateScheduler[Learning Rate Scheduler]
@@ -106,6 +118,13 @@ flowchart LR
     
     NeuralNetworkHyperparameter --> |"Valid Neural Network Architecture"| QkerasContainer
 
-    
-    
-    
+    classDef file fill:#f0e6cc,stroke:#f0e6cc,stroke-width:2;
+    classDef metadata fill:#b4d8c7,stroke:#b4d8c7,stroke-width:2;
+    classDef container fill:#a0cdbb,stroke:#a0cdbb,stroke-width:2;
+    classDef dataFedRecord fill:#6bb6c4,stroke:#6bb6c4,stroke-width:2;
+
+    class File1,File2,File3,File4 file;
+    class Metadata1,Metadata2,Metadata3,Metadata4 metadata;
+    class DataFedClient,DataFedRepository,QkerasContainer,HLS4MLContainer,VivadoContainer,AutoMLContainer,NeuralNetworkHyperparameter,GlobusContainer container;
+    class SourceCode,DataFedNeuralNetwork,HLS4ML,VivadoDataFed dataFedRecord;    
+    classDef default fill:#5a91c0,stroke:#5a91c0,stroke-width:2;
