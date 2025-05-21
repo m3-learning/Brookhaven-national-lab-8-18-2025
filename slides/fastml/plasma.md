@@ -106,3 +106,18 @@ roundedEdges: false
 4. 100 μs – 1 ms reading 1 MB block from NVMe
 5. 0.1 ms – 1 ms local network ping
 6. 10 ms – 20 ms reading 1 MB block from spinning disk 
+
+---
+layout: main-custom-layout
+titleText: "FPGA Block Diagram"
+mainHeight: 70
+textboxHeight: 0
+---
+
+<CrossfadeImages :images="[
+  'fastml/plasma/pareto.svg',
+]"/>
+
+::text::
+- How do you efficiently achieve a good tradeoff between latency (power), and accuracy?
+

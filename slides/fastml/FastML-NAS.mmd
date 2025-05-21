@@ -1,0 +1,111 @@
+flowchart LR
+
+    
+
+    subgraph DataFedClient[DataFed Client]
+        subgraph SourceCode[Source Code]
+            subgraph File1[File]
+                PythonScripts[Python Scripts]
+            end
+            subgraph Metadata1[Metadata]
+                Checksums[Checksums]
+                Environment["Environment (pipfreeze, dockerfile)"]
+            end
+        end
+
+        subgraph DataFedNeuralNetwork[Neural Network Hyperparameters]
+            subgraph Metadata2[Metadata]
+                Hyperparameters[Hyperparameters]
+                PythonEnvironment[Python Environment]
+                PerformanceResults[Performance Results]
+                ModelMetrics[Model Metrics]
+            end
+            subgraph File2[File]
+                PythonScripts[Python Scripts]
+                ModelWeights[Model Weights]
+            end
+        end
+
+        subgraph HLS4ML[HLS4ML]
+            subgraph File3[File]
+                HLSOutputFiles[HLS Output Files]
+            end
+            subgraph Metadata3[Metadata]
+                HLS4MLTuningParameters[HLS4ML Tuning Parameters]
+            end
+        end
+
+    end
+
+    ModelTraining --> ModelWeights
+    ModelEvaluation --> ModelMetrics
+    PerformanceResults --> ModelMetrics
+    NeuralNetworkHyperparameter --> Hyperparameters
+    SourceCode --> DataFedNeuralNetwork
+    TuningParameters --> HLS4MLTuningParameters
+    HLS4MLConversion --> HLSOutputFiles
+
+
+    subgraph GlobusContainer[Globus Container]
+    end
+
+    DataFedRepository[DataFed Repository]
+
+    DataFedClient --> GlobusContainer --> DataFedRepository
+
+    subgraph QkerasContainer[Qkeras Container]
+        ModelTraining[Model Training]
+        ModelPruning[Model Pruning]
+        ModelEvaluation[Model Evaluation]
+        ModelTraining --> ModelPruning
+        ModelPruning --> ModelEvaluation
+        ModelEvaluation --> ModelTraining
+    end
+
+    QkerasContainer --> HLS4MLContainer
+
+    subgraph HLS4MLContainer[HLS4ML Container]
+        TuningParameters[Tuning Parameters]
+        HLS4MLConversion[HLS4ML Conversion]
+        TuningParameters --> HLS4MLConversion
+    end
+
+    HLS4MLConversion --> VivadoContainer
+    
+    subgraph VivadoContainer[Vivado Container]
+        CompiledIPBlock[Compiled IP Block]
+        ResourceReport[Resource Report]
+        CompiledIPBlock --> ResourceReport
+    end
+
+    ResourceReport --> DesignSpecification
+    DesignSpecification --> TuningParameters
+    DesignSpecification --> AutoMLContainer
+    
+    DesignSpecification[Design Specification]
+
+    subgraph AutoMLContainer[AutoML Container]
+        Orchestrator[Orchestrator]
+    end
+
+    AutoMLContainer --> NeuralNetworkHyperparameter
+    
+    subgraph NeuralNetworkHyperparameter[Neural Network Hyperparameter]
+        LayerSize[Layer Size]
+        LayerType[Layer Type]
+        LayerPrecisionRange[Layer Precision Range]
+
+        subgraph Optimization[Optimization]
+            LearningRate[Learning Rate]
+            OptimizerOrder[Optimizer Order]
+            LearningRateScheduler[Learning Rate Scheduler]
+            RegularizationScheduler[Regularization Scheduler]
+        end
+        
+    end
+    
+    NeuralNetworkHyperparameter --> |"Valid Neural Network Architecture"| QkerasContainer
+
+    
+    
+    

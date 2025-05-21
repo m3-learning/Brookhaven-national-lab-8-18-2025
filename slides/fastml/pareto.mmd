@@ -1,0 +1,44 @@
+%%{init: {
+  "scale": .95,
+  "flowchart": { "useMaxWidth": false,"defaultRenderer": "elk"}
+}}%%
+flowchart TD
+
+  subgraph OptimizationObjectives["Pareto Tradeoff Dimensions"]
+    Perf["📈 Model Performance"]
+  end
+
+  subgraph HardwareBreakdown["🔧 Hardware Resource Types"]
+    BinOps["🧮 Binary Ops"]
+    LUTs["📊 Lookup Tables"]
+    Quant["⚖️ Quantization"]
+  end
+
+  Latency["⚡ Latency (ms)"]
+
+  HardwareBreakdown --> BinOps
+  HardwareBreakdown --> LUTs
+  HardwareBreakdown --> Quant
+
+  %% Annotation nodes
+  A1["Fewer ops ↓ latency, ↑ compression"]
+  A2["Smaller LUTs → less hardware usage"]
+  A3["Aggressive quant ↓ size, ↑ error"]
+  A4["Faster inference ↔ potential accuracy drop"]
+  A5["Simplified model ↔ lower expressiveness"]
+
+  %% Connecting via annotation nodes
+  BinOps --> A1 --> Latency
+  LUTs --> A2 --> Latency
+  Quant --> A3 --> Perf
+  Latency --> A4 --> Perf
+  HardwareBreakdown --> A5 --> Perf
+
+  classDef red fill:#ffdddd,stroke:#ff8888,stroke-width:2;
+  classDef green fill:#ddffdd,stroke:#88cc88,stroke-width:2;
+  classDef blue fill:#ddeeff,stroke:#3399ff,stroke-width:2;
+  classDef gray fill:#eeeeee,stroke:#999999,stroke-dasharray: 3 3;
+
+  class Latency,Perf blue
+  class BinOps,LUTs,Quant red
+  class A1,A2,A3,A4,A5 gray
