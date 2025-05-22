@@ -179,3 +179,14 @@ src: ./slides/fastml/plasma.md
 ---
 src: ./slides/fastml/modelcompression.md
 ---
+
+---
+layout: main-custom-layout
+titleText: "Acknowledgements"
+mainHeight: 83
+textboxHeight: 0
+---
+
+<CrossfadeImages :images="[
+  'people.png',
+]"/>
