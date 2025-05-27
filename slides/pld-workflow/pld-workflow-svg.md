@@ -5,7 +5,10 @@ mainHeight: 80
 textboxHeight: 0
 ---
 
-<CrossfadeImages :images="[
-  '/pld-workflow/pld-workflow.svg',
-  '/pld-workflow/pld-workflow-blue-datafed.svg',
-]" />
+<div class="relative w-full h-full overflow-auto">
+  <img
+    src="/pld-workflow/pld-workflow-blue-datafed.svg"
+    class="max-w-none max-h-none object-contain"
+    alt="Scrollable image"
+  />
+</div>
