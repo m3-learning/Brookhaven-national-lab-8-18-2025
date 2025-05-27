@@ -77,10 +77,6 @@ src: ./slides/datafed/datafed-workflow/datafed-workflow.md
 ---
 
 ---
-src: ./slides/datafed/datafed-infrastructure.md
----
-
----
 src: ./slides/people/elephant.md
 ---
 
