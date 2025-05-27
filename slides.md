@@ -24,7 +24,7 @@ mdc: true
 #  ogImage: https://cover.sli.dev
 ---
 
-# 🧠🔩 Chem-AIstry in Motion: Fast Science, Faster Learning – Beyond Equilibrium Synthesis, Powered by ML, FPGAs, and Kubernetes
+# 🧠🧪 Many Single Atoms, Many Smarter Moves: Chem-AIstry in Motion – Fast Science, Faster Learning with ML, FPGAs, and Kubernetes
 
 ## Joshua C. Agar
 
