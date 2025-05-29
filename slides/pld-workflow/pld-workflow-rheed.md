@@ -5,6 +5,11 @@ mainHeight: 80
 textboxHeight: 0
 ---
 
-<CrossfadeImages :images="[
-  '/pld-workflow/rheed-plume-highlight.png',
-]" />
+<div class="relative w-full h-full overflow-auto">
+  <img
+    src="/pld-workflow/rheed-plume-highlight.png"
+    class="max-w-none object-contain"
+    style="transform: scale(0.60); transform-origin: top left;"
+    alt="Scrollable image"
+  />
+</div>

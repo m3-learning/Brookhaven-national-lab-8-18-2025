@@ -70,21 +70,6 @@ reference: "Collab: Nhan Tran (FermiLabs), Giuseppe Di Guglielmo, Michael E Maue
 - Data is aquired over CoaXPress --> Custom Logic ML Inference --> FPGA --> Control Signals
 
 ---
-layout: main-custom-layout
-titleText: "Medium Article with Tutorial"
-mainHeight: 55
-textboxHeight: 0
-subtitleText: "Deploying neural networks for in-situ inference on frame grabber FPGAs in high-speed imaging"
----
-
-<div class="flex justify-center items-center w-full h-full">
-  <iframe 
-      src="https://rss.app/embed/v1/magazine/C2pO8CEqZuryHq5D" 
-      frameborder="0" 
-      style="height: 100%; border: 0;">
-  </iframe>
-</div>
----
 layout: ncolumns
 titleText: "Timing and Synchronization"
 columns: 2
