@@ -6,4 +6,4 @@ textboxHeight: 0
 reference: "Colab: David Muller, Colin Ophus, Yimo Han, and others" 
 ---
 
-<iframe src="stem4d/mae_vs_bkg_noise_plot_enhanced.html" width="800px" height="400px"></iframe>
+<iframe src="stem4d/mae_vs_bkg_noise_plot_enhanced.html" width="700px" height="400px"></iframe>
