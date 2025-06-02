@@ -22,7 +22,7 @@ titleText: Research Philosophy
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('/research-philosophy/epitaxy.png') center/cover no-repeat;
+      background: url('research-philosophy/epitaxy.png') center/cover no-repeat;
       opacity: 0.5;
       z-index: 0;
     "></div>
@@ -55,7 +55,7 @@ titleText: Research Philosophy
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('/research-philosophy/AFM.png') center/cover no-repeat;
+      background: url('research-philosophy/AFM.png') center/cover no-repeat;
       opacity: 0.5;
       z-index: 0;
     "></div>
@@ -88,7 +88,7 @@ titleText: Research Philosophy
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('/research-philosophy/ml.png') center/cover no-repeat;
+      background: url('research-philosophy/ml.png') center/cover no-repeat;
       opacity: 0.5;
       z-index: 0;
     "></div>
@@ -121,7 +121,7 @@ titleText: Research Philosophy
       left: 0;
       width: 100%;
       height: 100%;
-      background: url('/research-philosophy/alveo.png') center/cover no-repeat;
+      background: url('research-philosophy/alveo.png') center/cover no-repeat;
       opacity: 0.5;
       z-index: 0;
     "></div>
