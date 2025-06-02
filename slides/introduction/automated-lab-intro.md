@@ -8,7 +8,7 @@ textboxHeight: 5
 
 <div class="relative w-full h-full">
   <img
-    src="/automated-lab-introduction/automated-lab.png"
+    src="automated-lab-introduction/automated-lab.png"
     class="absolute inset-0 m-auto h-full object-contain rounded-2xl transition-opacity duration-500"
   />
 </div>

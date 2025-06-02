@@ -7,7 +7,7 @@ textboxHeight: 0
 
 <div class="relative w-full h-full overflow-auto">
   <img
-    src="/pld-workflow/pld-workflow-blue-datafed.svg"
+    src="pld-workflow/pld-workflow-blue-datafed.svg"
     class="max-w-none object-contain"
     style="transform: scale(0.60); transform-origin: top left;"
     alt="Scrollable image"

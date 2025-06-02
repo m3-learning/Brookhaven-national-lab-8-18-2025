@@ -10,7 +10,7 @@ layout: center
 layout: center
 ---
 <div class="flex flex-col items-center justify-center">
-  <img src="/mordac.jpg" class="h-[400px] object-contain" alt="Mordac" />
+  <img src="mordac.jpg" class="h-[400px] object-contain" alt="Mordac" />
 </div>
 
 ---

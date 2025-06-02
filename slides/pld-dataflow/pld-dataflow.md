@@ -6,8 +6,8 @@ textboxHeight: 0
 ---
 
 <CrossfadeImages :images="[
-  '/pld-dataflow/1.png',
-  '/pld-dataflow/2.png',
-  '/pld-dataflow/3.png',
-  '/pld-dataflow/4.png',
+  'pld-dataflow/1.png',
+  'pld-dataflow/2.png',
+  'pld-dataflow/3.png',
+  'pld-dataflow/4.png',
 ]" />

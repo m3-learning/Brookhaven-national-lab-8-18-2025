@@ -36,7 +36,7 @@ textboxHeight: 0
 
 <div class="h-full w-full flex items-center justify-center">
   <video controls class="max-w-full max-h-full">
-    <source src="/plume-dynamics/t5_plume_video.mp4" type="video/mp4">
+    <source src="plume-dynamics/t5_plume_video.mp4" type="video/mp4">
   </video>
 </div>
 
