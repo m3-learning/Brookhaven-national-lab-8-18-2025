@@ -14,7 +14,7 @@ layout: ncolumns
 titleText: "DataFed TorchFlow"
 columns: 2
 images:
-  - /fastml/torchlogger/datafedTorchflow.png
+  - fastml/torchlogger/datafedTorchflow.png
   - null
 titleClicks: [0, 1]
 columnWidths: [1, 1]
