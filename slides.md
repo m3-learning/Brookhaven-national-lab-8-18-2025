@@ -24,6 +24,30 @@ mdc: true
 #  ogImage: https://cover.sli.dev
 ---
 
+# Challenges and Oppotrtunities for Real Time Machine Learning of Atomic Scale Phenomena in TEM
+
+## Joshua C. Agar (Courtesy of Mitra Taheri)
+
+## Drexel University
+
+## Department of Mechanical Engineering and Mechanics
+
+## {{ new Date().toLocaleDateString() }}
+
+<!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
+  Press Space for next page <carbon:arrow-right />
+</div> -->
+
+<div class="abs-br m-6 text-xl">
+  <a href="https://github.com/m3-learning" target="_blank" class="slidev-icon-btn">
+    <carbon:logo-github />
+  </a>
+</div>
+
+---
+layout: cover
+class: text-center
+---
 # 🧠🧪 Many Single Atoms, Many Smarter Moves: Chem-AIstry in Motion – Fast Science, Faster Learning with ML, FPGAs, and Kubernetes
 
 ## Joshua C. Agar
@@ -43,6 +67,7 @@ mdc: true
     <carbon:logo-github />
   </a>
 </div>
+
 
 ---
 src: ./slides/introduction/research-philosphy.md
@@ -186,3 +211,22 @@ textboxHeight: 0
 <CrossfadeImages :images="[
   'people.png',
 ]"/>
+
+---
+layout: main-custom-layout
+titleText: "Source Materials"
+mainHeight: 83
+textboxHeight: 0
+---
+
+<QrGrid :items="[
+  { title: 'Slides', url: 'https://github.com/m3-learning/MOSAIC-Chicago-06-02-2025' },
+  { title: 'DataFed', url: 'https://datafed.ornl.gov/ui/welcome' },
+  { title: 'Learning Symmetries', url: 'https://github.com/yig319/Understanding-Experimental-Images-by-Identifying-Symmetries-with-Deep-Learning' },
+  { title: 'RHEED Analysis', url: 'https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED'},
+  { title: 'Plume Dynamics', url: 'https://github.com/m3-learning/SrRuO3_Plume_Dynamics'},
+  { title: 'Auto4DSTEM', url: 'https://github.com/m3-learning/Auto4DSTEM'},
+  { title: 'Embedding Visualizer', url: 'https://github.com/chirayupatel9/embedding-be-lmdb'},
+  { title: 'HLS4ML', url: 'https://fastmachinelearning.org/hls4ml/'},
+  { title: 'FastML Tutorial Medium', url: 'https://medium.com/@forelliryan/deploying-neural-networks-for-in-situ-inference-on-frame-grabber-fpgas-in-high-speed-imaging-6201557fdabc'},
+]" :columns="5" />
