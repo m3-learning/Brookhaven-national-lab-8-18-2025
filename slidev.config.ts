@@ -1,13 +1,8 @@
 // slidev.config.ts
 import { defineConfig } from 'slidev/config'
 
-import { defineConfig } from 'vite'
-
-const repo = process.env.REPO || ''
-
 export default defineConfig({
   mermaid: {
-    base: repo ? `/${repo}/` : '/',
     theme: 'neutral',       // 'default', 'forest', 'dark', etc.
     startOnLoad: true,
     flowchart: {
