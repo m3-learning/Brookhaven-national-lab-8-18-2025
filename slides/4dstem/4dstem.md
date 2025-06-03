@@ -8,7 +8,7 @@ images:
 titles:
   - null
   - null
-titleClicks: [0, 1]
+titleClicks: [1, 2]
 columnWidths: [1.5, 2]
 textboxHeight: 0
 mainHeight: 60

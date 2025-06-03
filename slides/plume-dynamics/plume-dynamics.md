@@ -19,7 +19,7 @@ images:
 titles:
  - Surface Topography
  - Crystal Structure
-titleClicks: [0, 1]
+titleClicks: [1, 2]
 columnWidths: [1, 1]
 textboxHeight: 0
 mainHeight: 80
@@ -73,7 +73,7 @@ images:
 titles:
  - Averaged Plume Metrics
  - null
-titleClicks: [0, 1]
+titleClicks: [1, 2]
 columnWidths: [1, 1]
 textboxHeight: 0
 mainHeight: 65
@@ -82,7 +82,7 @@ roundedEdges: false
 ---
 
 <template #col1>
-<div v-click="1" class="text-left gap-4 flex-1">
+<div v-click="2" class="text-left gap-4 flex-1">
     <ul class="list-disc pl-4">
       <li>Computer Vision can be used to characterize the quantify the plume dynamics</li> 
       <li>There are no clear statistically significant trends in the average plume dynamics metrics</li>

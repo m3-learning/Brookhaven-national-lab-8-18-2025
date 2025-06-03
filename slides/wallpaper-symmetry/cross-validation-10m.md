@@ -10,7 +10,7 @@ titles:
   - "Training"
   - "Validation"
   - "Cross Validation"
-titleClicks: [0, 1, 2]
+titleClicks: [1, 2, 3]
 columnWidths: [1,1,1]
 textboxHeight: 15
 mainHeight: 50
@@ -35,7 +35,7 @@ mainHeight: 50
 </template>
 
 <template #text>
-<div class="text-left">
+<div v-click="3" class="text-left">
   <ul class="list-disc pl-4">
     <li>10M vision transformers start to learn robust understanding of symmetry within statistical bounds of the training dataset</li>
     <li>Massive scale data not typical in materials science or chemistry is required</li>

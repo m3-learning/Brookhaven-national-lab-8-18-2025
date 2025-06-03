@@ -5,7 +5,7 @@ columns: 2
 images:
   - RHEED/Growth_mechanism-svg.svg
   - RHEED/rheed-vertical.png
-titleClicks: [0, 1]
+titleClicks: [1, 2]
 columnWidths: [1, 1]
 textboxHeight: 0
 mainHeight: 80
