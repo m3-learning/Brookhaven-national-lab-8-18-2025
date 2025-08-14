@@ -24,35 +24,9 @@ mdc: true
 #  ogImage: https://cover.sli.dev
 ---
 
-# Challenges and Oppotrtunities for Real Time Machine Learning of Atomic Scale Phenomena in TEM
-
-## Joshua C. Agar (Courtesy of Mitra Taheri)
-
-## Drexel University
-
-## Department of Mechanical Engineering and Mechanics
-
-## {{ new Date().toLocaleDateString() }}
-
-<!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div> -->
-
-<div class="abs-br m-6 text-xl">
-  <a href="https://github.com/m3-learning" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
-</div>
-
----
-layout: cover
-class: text-center
----
-# 🧠🧪 Many Single Atoms, Many Smarter Moves: Chem-AIstry in Motion – Fast Science, Faster Learning with ML, FPGAs, and Kubernetes
+# 🧠🔩 Chem-AIstry in Motion: Fast Science, Faster Learning – Beyond Equilibrium Synthesis, Powered by ML, FPGAs, and Kubernetes
 
 ## Joshua C. Agar
-
-## Drexel University
 
 ## Department of Mechanical Engineering and Mechanics
 

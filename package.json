@@ -3,7 +3,7 @@
     "build": "slidev build"
   },
   "dependencies": {
-    "@slidev/cli": "^51.8.1",
+    "@slidev/cli": "^51.8.2",
     "@slidev/theme-default": "^0.25.0",
     "@slidev/theme-seriph": "^0.25.0",
     "qrcode.vue": "^3.3.3"

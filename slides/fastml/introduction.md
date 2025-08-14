@@ -1,14 +1,14 @@
 ---
 layout: main-custom-layout
 titleText: "Timing is Everything"
-mainHeight: 75
+mainHeight: 80
 textboxHeight: 0
 ---
 
 <CrossfadeImages :images="[
     'fastml/superbowl-superbowllii.gif',
     'fastml/saquon-saquon-barkley.gif',
-    ]" class="w-[200%] h-[200%] object-cover" />
+    ]" />
 
 ---
 layout: main-custom-layout
