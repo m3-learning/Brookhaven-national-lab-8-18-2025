@@ -35,8 +35,8 @@ roundedEdges: false
 - Allows the addition of any custom metadata.
 
 ::text::
-- Pip installable python package `pip install datafed_torchflow`
-- With a single instantiation provides a drag-and-drop replacement for `model.save()` in PyTorch
+- <span v-click="3">Pip installable python package `pip install datafed_torchflow`</span>
+- <span v-click="3">With a single instantiation provides a drag-and-drop replacement for `model.save()` in PyTorch</span>
 
 ---
 layout: main-custom-layout
