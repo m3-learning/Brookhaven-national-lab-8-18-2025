@@ -3,19 +3,23 @@ name: Deploy Slidev to GitHub Pages
 on:
   push:
     branches:
-      - main  # or 'master', depending on your repo
+      - main  # adjust if you use 'master'
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
-      - name: Checkout (with submodules)
+      - name: Checkout repository (with submodules)
         uses: actions/checkout@v4
         with:
           submodules: true
@@ -24,19 +28,27 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build Slidev
-        run: npm run build
-        env:
-          REPO: ${{ github.event.repository.name }}
+        run: npx slidev build
 
-      - name: Upload pages artifact
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
+  deploy:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
