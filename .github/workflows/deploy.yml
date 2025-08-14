@@ -1,4 +1,5 @@
 name: Deploy Slidev to GitHub Pages
+
 on:
   push:
     branches:
@@ -18,10 +19,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (with submodules)
+      - name: Checkout repository (with full submodule history)
         uses: actions/checkout@v4
         with:
-          submodules: true
+          submodules: recursive
+          fetch-depth: 0   # ensures full history so old commits can be fetched
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
