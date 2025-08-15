@@ -3,7 +3,7 @@
 theme: ./slide-dev-template/slidev/theme
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-title: "🧠🧪 Many Single Atoms, Many Smarter Moves: Chem-AIstry in Motion – Fast Science, Faster Learning with ML, FPGAs, and Kubernetes"
+title: "Joshua C. Agar Brookhaven National Laboratory 8-18-2025"
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
@@ -22,15 +22,17 @@ mdc: true
 # open graph
 # seoMeta:
 #  ogImage: https://cover.sli.dev
+layout: cover
 ---
+# 🧠🧪 General AI Approaches for Large Scale Data Handling in Ferroelectrics
 
-# 🧠🔩 Chem-AIstry in Motion: Fast Science, Faster Learning – Beyond Equilibrium Synthesis, Powered by ML, FPGAs, and Kubernetes
-
-## Joshua C. Agar
-
-## Department of Mechanical Engineering and Mechanics
+## Prof. Joshua C. Agar
 
 ## {{ new Date().toLocaleDateString() }}
+
+<QrGrid :items="[
+  { title: 'Slides', url: 'https://m3-learning.github.io/ISAF-PFM-Tutorial' },
+]" :columns="1" />
 
 <!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
   Press Space for next page <carbon:arrow-right />
