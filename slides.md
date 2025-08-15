@@ -24,14 +24,14 @@ mdc: true
 #  ogImage: https://cover.sli.dev
 layout: cover
 ---
-# 🧠🧪 General AI Approaches for Large Scale Data Handling in Ferroelectrics
+# 🧠🔩 Chem-AIstry in Motion: Fast Science, Faster Learning – Beyond Equilibrium Synthesis, Powered by ML, FPGAs, and Kubernetes
 
 ## Prof. Joshua C. Agar
 
 ## {{ new Date().toLocaleDateString() }}
 
 <QrGrid :items="[
-  { title: 'Slides', url: 'https://m3-learning.github.io/ISAF-PFM-Tutorial' },
+  { title: 'Slides', url: 'https://github.com/m3-learning/Brookhaven-national-lab-8-18-2025/deployments' },
 ]" :columns="1" />
 
 <!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
@@ -196,7 +196,7 @@ textboxHeight: 0
 ---
 
 <QrGrid :items="[
-  { title: 'Slides', url: 'https://m3-learning.github.io/MOSAIC-Chicago-06-02-2025/' },
+  { title: 'Slides', url: 'https://github.com/m3-learning/Brookhaven-national-lab-8-18-2025/deployments' },
   { title: 'DataFed', url: 'https://datafed.ornl.gov/ui/welcome' },
   { title: 'Learning Symmetries', url: 'https://github.com/yig319/Understanding-Experimental-Images-by-Identifying-Symmetries-with-Deep-Learning' },
   { title: 'RHEED Analysis', url: 'https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED'},
