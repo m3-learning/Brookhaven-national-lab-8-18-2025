@@ -31,7 +31,7 @@ layout: cover
 ## {{ new Date().toLocaleDateString() }}
 
 <QrGrid :items="[
-  { title: 'Slides', url: 'https://github.com/m3-learning/Brookhaven-national-lab-8-18-2025/deployments' },
+  { title: 'Slides', url: 'https://m3-learning.github.io/Brookhaven-national-lab-8-18-2025/1' },
 ]" :columns="1" />
 
 <!-- <div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
@@ -196,7 +196,7 @@ textboxHeight: 0
 ---
 
 <QrGrid :items="[
-  { title: 'Slides', url: 'https://github.com/m3-learning/Brookhaven-national-lab-8-18-2025/deployments' },
+  { title: 'Slides', url: 'https://m3-learning.github.io/Brookhaven-national-lab-8-18-2025/1' },
   { title: 'DataFed', url: 'https://datafed.ornl.gov/ui/welcome' },
   { title: 'Learning Symmetries', url: 'https://github.com/yig319/Understanding-Experimental-Images-by-Identifying-Symmetries-with-Deep-Learning' },
   { title: 'RHEED Analysis', url: 'https://github.com/m3-learning/Predicting-Pulsed-Laser-Deposition-SrTiO3-Homoepitaxy-Growth-Dynamics-using-RHEED'},
