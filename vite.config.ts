@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/Broookhaven-8-18-2025/',
+  base: '/Brookhaven-national-laboratory-8-18-2025/',
 })
